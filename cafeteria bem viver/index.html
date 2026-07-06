@@ -13,7 +13,7 @@ HTML<!DOCTYPE html>
         .heading-font { font-family: 'Playfair Display', serif; }
         
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("imagens/zvrxj.jpg") center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(70, 70, 70, 0.65)), url("imagens/zvrxj.jpg") center/cover no-repeat;
         }
         
         .product-card {
@@ -21,7 +21,7 @@ HTML<!DOCTYPE html>
         }
         .product-card:hover {
             transform: translateY(-12px) scale(1.02);
-            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
         
         .nav-link {
@@ -34,7 +34,7 @@ HTML<!DOCTYPE html>
             height: 3px;
             bottom: -4px;
             left: 0;
-            background-color: #92400e;
+            background-color: #830000;
             transition: width 0.3s ease;
         }
         .nav-link:hover:after { width: 100%; }
@@ -155,26 +155,26 @@ HTML<!DOCTYPE html>
                     <div class="product-card bg-white rounded-3xl p-6 text-center shadow">
                         <img src="imagens/cafe expresso.jpg" class="w-40 h-40 mx-auto rounded-2xl object-cover mb-6" alt="Espresso">
                         <h4 class="font-semibold text-xl">Espresso</h4>
-                        <p class="text-amber-800 font-bold mt-3">R$ 8,90</p>
-                        <button onclick="addToCart(this)" data-name="Espresso" data-price="8.90" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
+                        <p class="text-amber-800 font-bold mt-3">R$ 9,00</p>
+                        <button onclick="addToCart(this)" data-name="Espresso" data-price="9,00" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
                     </div>
                     <div class="product-card bg-white rounded-3xl p-6 text-center shadow">
                         <img src="imagens/cappuccino.webp" class="w-40 h-40 mx-auto rounded-2xl object-cover mb-6" alt="Cappuccino">
                         <h4 class="font-semibold text-xl">Cappuccino</h4>
-                        <p class="text-amber-800 font-bold mt-3">R$ 12,90</p>
-                        <button onclick="addToCart(this)" data-name="Cappuccino" data-price="12.90" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
+                        <p class="text-amber-800 font-bold mt-3">R$ 12,00</p>
+                        <button onclick="addToCart(this)" data-name="Cappuccino" data-price="12,00" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
                     </div>
                     <div class="product-card bg-white rounded-3xl p-6 text-center shadow">
                         <img src="imagens/latte.avif" class="w-40 h-40 mx-auto rounded-2xl object-cover mb-6" alt="Latte">
                         <h4 class="font-semibold text-xl">Latte</h4>
-                        <p class="text-amber-800 font-bold mt-3">R$ 13,90</p>
-                        <button onclick="addToCart(this)" data-name="Latte" data-price="13.90" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
+                        <p class="text-amber-800 font-bold mt-3">R$ 10,00</p>
+                        <button onclick="addToCart(this)" data-name="Latte" data-price="10,00" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
                     </div>
                     <div class="product-card bg-white rounded-3xl p-6 text-center shadow">
                         <img src="imagens/cafe com leite.jpg" class="w-40 h-40 mx-auto rounded-2xl object-cover mb-6" alt="Café com Leite">
                         <h4 class="font-semibold text-xl">Café com Leite</h4>
-                        <p class="text-amber-800 font-bold mt-3">R$ 9,90</p>
-                        <button onclick="addToCart(this)" data-name="Café com Leite" data-price="9.90" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
+                        <p class="text-amber-800 font-bold mt-3">R$ 10,00</p>
+                        <button onclick="addToCart(this)" data-name="Café com Leite" data-price="10,00" class="mt-4 w-full bg-amber-100 hover:bg-amber-200 py-3 rounded-2xl">Adicionar</button>
                     </div>
                 </div>
             </div>
@@ -190,8 +190,8 @@ HTML<!DOCTYPE html>
                         <div class="p-6">
                             <h4 class="font-semibold">Pastel</h4>
                             <p class="text-sm text-gray-500">Carne / Queijo</p>
-                            <p class="font-bold text-amber-900 mt-4">R$ 9,90</p>
-                            <button onclick="addToCart(this)" data-name="Pastel" data-price="9.90" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
+                            <p class="font-bold text-amber-900 mt-4">R$ 9,00</p>
+                            <button onclick="addToCart(this)" data-name="Pastel" data-price="9,00" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
                         </div>
                     </div>
                     <div class="product-card bg-white rounded-3xl overflow-hidden shadow">
@@ -199,26 +199,26 @@ HTML<!DOCTYPE html>
                         <div class="p-6">
                             <h4 class="font-semibold">Risoles</h4>
                             <p class="text-sm text-gray-500">Carne ou Palmito</p>
-                            <p class="font-bold text-amber-900 mt-4">R$ 8,50</p>
-                            <button onclick="addToCart(this)" data-name="Risoles" data-price="8.50" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
+                            <p class="font-bold text-amber-900 mt-4">R$ 9,00</p>
+                            <button onclick="addToCart(this)" data-name="Risoles" data-price="9,00" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
                         </div>
                     </div>
                     <div class="product-card bg-white rounded-3xl overflow-hidden shadow">
                         <img src="imagens/coxinha.jpeg" class="w-full h-56 object-cover" alt="Coxinha">
                         <div class="p-6">
                             <h4 class="font-semibold">Coxinha</h4>
-                            <p class="text-sm text-gray-500">Frango cremoso</p>
-                            <p class="font-bold text-amber-900 mt-4">R$ 7,90</p>
-                            <button onclick="addToCart(this)" data-name="Coxinha" data-price="7.90" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
+                            <p class="text-sm text-gray-500">Frango </p>
+                            <p class="font-bold text-amber-900 mt-4">R$ 9,00</p>
+                            <button onclick="addToCart(this)" data-name="Coxinha" data-price="9,00" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
                         </div>
                     </div>
                     <div class="product-card bg-white rounded-3xl overflow-hidden shadow">
-                        <img src="imagens/espetinho de carne.jfif" class="w-full h-56 object-cover" alt="Espetinho">
+                        <img src="imagens/enroladinho.jfif" class="w-full h-56 object-cover" alt="Espetinho">
                         <div class="p-6">
-                            <h4 class="font-semibold">Espetinho de Carne</h4>
-                            <p class="text-sm text-gray-500">Com farofa</p>
-                            <p class="font-bold text-amber-900 mt-4">R$ 12,90</p>
-                            <button onclick="addToCart(this)" data-name="Espetinho de Carne" data-price="12.90" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
+                            <h4 class="font-semibold">Enroladinho de salsicha</h4>
+                            <p class="text-sm text-gray-500"></p>
+                            <p class="font-bold text-amber-900 mt-4">R$ 9,00</p>
+                            <button onclick="addToCart(this)" data-name="Enroladinho de salsicha" data-price="9,00" class="mt-4 w-full py-3 bg-amber-800 text-white rounded-2xl hover:bg-amber-900">Adicionar</button>
                         </div>
                     </div>
                 </div>
@@ -372,7 +372,7 @@ HTML<!DOCTYPE html>
             msg += `\nTotal: R$ ${total.toFixed(2)}\n`;
             msg += `\nEndereço para entrega: `;
             
-            window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`, '_blank');
+            window.open(`https://wa.me/5545999999999?text=${encodeURIComponent(msg)}`, '_blank');
             
             setTimeout(() => {
                 cart = [];
